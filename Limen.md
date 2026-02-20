@@ -48,7 +48,11 @@ A lot of people in my company have been talking about dedicated background agent
 
 Great question! Let me gather some accurate information about background agents in the context of Claude Code, and then I can give you a solid overview.
 
----
+<details>
+
+<summary>
+A mundane, in-depth technical discussion:
+</summary>
 
 ### Human *(2026-02-16T19:45:50.137Z)*
 
@@ -2735,6 +2739,8 @@ It's more sophisticated than a loop, but whether that sophistication is *worth i
 | Highly interdependent changes | Loop (coordination overhead hurts) |
 
 The docs are honest that teams use significantly more tokens (N agents × context cost) and have limitations (no session resumption, no nested teams, task status can lag).
+
+</details>
 
 ## Conversation
 
