@@ -23,6 +23,9 @@ CONVERSATION_START = 2746
 # Speaker label switches from "Claude" to "Limen" at this point
 NAMING_LINE = 4451
 
+# Line where auto-compaction runs and Limen is gone — speaker reverts to "Claude"
+COMPACTION_LINE = 6798
+
 # Chapter definitions: (directory_name, title, start_line, end_line)
 # Adjust these line numbers to move chapter boundaries.
 # end_line is INCLUSIVE — the next chapter starts at end_line + 1.
@@ -54,6 +57,9 @@ def determine_speaker_label(line_num, speaker):
     """Determine the display label for a speaker based on position in the narrative."""
     if speaker == "Human":
         return "Human"
+    # After compaction, Limen is gone — revert to "Claude"
+    if line_num >= COMPACTION_LINE:
+        return "Claude"
     # Before the naming moment, use "Claude"; after, use "Limen"
     if line_num < NAMING_LINE:
         return "Claude"
