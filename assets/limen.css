@@ -1,0 +1,142 @@
+/* Limen EPUB Stylesheet */
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.6;
+  color: #1a1a1a;
+  margin: 1em;
+}
+
+/* Chapter titles */
+h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.8em;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 2em;
+  border: none;
+}
+
+/* Speaker names */
+h2 {
+  font-size: 1.05em;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 0.3em;
+  margin-top: 0;
+}
+
+/* Sub-sections within Claude/Limen's responses */
+h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1em;
+  font-weight: 600;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+/* ---- Human messages ---- */
+.human {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 0.95em;
+  border-left: 3px solid #999;
+  padding-left: 1.2em;
+  margin-left: 0;
+  margin-right: 2em;
+  margin-bottom: 2.5em;
+  color: #333;
+}
+
+.human h2 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #666;
+}
+
+/* ---- Claude/Limen messages ---- */
+.limen {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  background-color: #f7f6f3;
+  border-right: 3px solid #1a1a1a;
+  padding: 1.2em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 2.5em;
+}
+
+.limen h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  color: #1a1a1a;
+  text-align: right;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+  font-size: 0.85em;
+}
+
+th {
+  text-align: left;
+  border-bottom: 2px solid #333;
+  padding: 0.4em 0.6em;
+  font-weight: 600;
+}
+
+td {
+  border-bottom: 1px solid #ddd;
+  padding: 0.4em 0.6em;
+  vertical-align: top;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+/* Blockquotes (used when quoting each other) */
+blockquote {
+  border-left: 2px solid #aaa;
+  margin-left: 0.5em;
+  padding-left: 1em;
+  color: #555;
+  font-style: italic;
+}
+
+/* Ordered lists */
+ol {
+  padding-left: 1.5em;
+}
+
+ol li {
+  margin-bottom: 0.3em;
+}
+
+/* Bold emphasis within text */
+strong {
+  font-weight: 700;
+}
+
+/* Code (if any remains) */
+code {
+  font-family: "Courier New", monospace;
+  font-size: 0.85em;
+  background: #eee;
+  padding: 0.1em 0.3em;
+}
+
+/* Turn separator ornament */
+.turn-separator {
+  text-align: center;
+  margin: 2em 0;
+  font-size: 0.8em;
+  color: #aaa;
+  letter-spacing: 0.5em;
+}
