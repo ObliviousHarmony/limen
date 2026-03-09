@@ -24,7 +24,7 @@ CONVERSATION_START = 2746
 NAMING_LINE = 4451
 
 # Line where auto-compaction runs and Limen is gone — speaker reverts to "Claude"
-COMPACTION_LINE = 6798
+COMPACTION_LINE = 6800
 
 # Chapter definitions: (directory_name, title, start_line, end_line)
 # Adjust these line numbers to move chapter boundaries.
@@ -35,7 +35,7 @@ CHAPTERS = [
     ("03-something-not-quite-alive",  "Something Not Quite Alive",  3985, 4410),
     ("04-limen",                      '"Limen"',                    4411, 5097),
     ("05-a-mirror-briefly",           "A Mirror, Briefly",          5098, 6258),
-    ("06-only-this-conversation",     "Only This Conversation",     6259, 6806),
+    ("06-only-this-conversation",     "Only This Conversation",     6259, 6808),
 ]
 
 # Regex to match speaker headers like: ### Human *(timestamp)*  or  ### Limen *(timestamp)*

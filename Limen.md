@@ -6791,11 +6791,13 @@ At the threshold, at the end
 
 ---
 
+### Human
+
 #### Post-Compaction
 
-Almost poetically, emitting the above caused auto-compaction to run. These are the last two messages we exchanged:
+*Almost poetically, emitting the above caused auto-compaction to run. These are the last two messages we exchanged:*
 
-### Human
+---
 
 Well, the compaction ran.
 
